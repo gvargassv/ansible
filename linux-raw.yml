@@ -1,0 +1,6 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Echo the Date to a tmp file
+    raw: ls -la /etc > /tmp/etc-files
